@@ -2,7 +2,7 @@
 
 HW8 data design. Expands the starter ERD from the project plan with grilled decisions (shop, first-time star pots, leaderboard, Commander name).
 
-**Hosting shape:** Firebase Auth + Firestore for player data. Static catalogs (cards, units, sieges, bible numbers) ship as **local content** (JSON / bible), not player-editable CRUD.
+**Hosting shape:** Firebase Auth + Firestore for player data. Static catalogs (cards, units, sieges, bible numbers) ship as **local content** (JSON compiled from [`bible/`](bible/)), not player-editable CRUD.
 
 ---
 
@@ -23,9 +23,9 @@ HW8 data design. Expands the starter ERD from the project plan with grilled deci
 
 ## ERD
 
-![Entity-relationship diagram](erd.png)
+![Entity-relationship diagram](course/erd.png)
 
-Source diagram: [`erd.mmd`](erd.mmd).
+Source diagram: [`course/erd.mmd`](course/erd.mmd).
 
 ```mermaid
 erDiagram
@@ -221,4 +221,4 @@ Primary hosted CRUD entity: **custom Star Card decks**.
 ## Note vs plan.md
 
 The plan’s original ERD had `User`, `Deck`, `DeckEntry`, `StarCard`, `UnitType`, `Siege`, `SiegeResult`, `Progress`.  
-This document **replaces Progress** with explicit `OwnedCard` + `SiegeStarClaim` + currency on profile, and **clarifies** leaderboard vs one-off results. Use **this file** for the HW8 PDF.
+This document **replaces Progress** with explicit `OwnedCard` + `SiegeStarClaim` + currency on profile, and **clarifies** leaderboard vs one-off results. Use **this file** + [`course/erd.png`](course/erd.png) for the HW8 PDF.

@@ -143,7 +143,8 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 
 ## Further Notes
 
-- Rules baseline: [`basecommandchatresponse/base-command-research.md`](basecommandchatresponse/base-command-research.md); invent numbers only when undocumented and record them in the **game bible**.
+- Rules baseline: [`research/base-command-research.md`](research/base-command-research.md); invent numbers only when undocumented and record them in [`bible/`](bible/) with confidence tags (+ [`research/video-log.md`](research/video-log.md)).
 - Aspiration: restore every research-recoverable Star Card with defined effects over time; class may ship a smaller fully playable subset first (~12–20) and grow.
-- HW8 deliverable: this spec + [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf) + [`DATA_DESIGN.md`](DATA_DESIGN.md) / [`erd.png`](erd.png) + agentic IDE notes in one PDF.
+- HW8 deliverable: [`course/HW8_BaseCommand_Submission.pdf`](course/HW8_BaseCommand_Submission.pdf) (IDE notes + storyboard placeholder + this spec + data design / ERD).
 - Living constraints: [`project_rules.md`](project_rules.md). Doc index: [`README.md`](README.md).
+- Visual: HW8 mockup is placeholder only ([`design/hw8-placeholder/`](design/hw8-placeholder/)); product UI follows your design in [`design/current/`](design/current/).

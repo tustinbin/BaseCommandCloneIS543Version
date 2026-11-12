@@ -9,12 +9,11 @@ Living source of truth. See [`README.md`](README.md) for the doc index.
 - **Post-class:** Rebrand/retheme; keep content data-driven (`themeKey` / JSON)
 - **Client:** SwiftUI · **Backend:** Firebase Spark (Auth + Firestore) · live backend from simulator
 - **Orientation:** Landscape for hub + siege play
-- **Art direction:** Geometric landscape UI (Figma mockup). Original game photos in `reference_photos/` for board/companion feel only — career/stats screens are Battlefront companion, not our systems.
+- **Art direction:** **Your** visual design in [`design/current/`](design/current/). [`design/hw8-placeholder/`](design/hw8-placeholder/) is HW8-only. Original game photos in [`research/reference_photos/`](research/reference_photos/) for board/companion feel only — career/stats screens are Battlefront companion, not our systems.
 - **Hub:** After login → Siege Home; swipe left Shop; swipe right Decs
-- **Rules baseline:** [`basecommandchatresponse/base-command-research.md`](basecommandchatresponse/base-command-research.md); invented numbers only in the **game bible** (later)
-- **Storyboard:** [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf)
+- **Rules baseline:** [`research/base-command-research.md`](research/base-command-research.md); numbers live in [`bible/`](bible/) (`observed` / `inferred` / `invented` + [`research/video-log.md`](research/video-log.md))
 - **Spec:** [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
-- **Data design:** [`DATA_DESIGN.md`](DATA_DESIGN.md) / [`erd.png`](erd.png)
+- **Data design:** [`DATA_DESIGN.md`](DATA_DESIGN.md) / [`course/erd.png`](course/erd.png)
 
 ## Primary CRUD
 
@@ -50,10 +49,11 @@ Living source of truth. See [`README.md`](README.md) for the doc index.
 
 | Phase | Focus |
 |-------|--------|
-| **HW8** | Spec, storyboard (Figma PDF), ERD, IDE notes → then UI code |
+| **HW8** | Spec, storyboard placeholder, ERD, IDE notes → UI shell (done) |
+| **Now** | Bible evidence pass + your visual design; freeze mockup-chasing |
 | **Dec 8** | Auth, deck CRUD, shop, profile, ≥1 siege, leaderboard |
 | **Out** | AI, Stripe, PvP, full 50-siege campaign as required bar, App Store mandate |
 
 ## Class notes
 
-See `class_notes.txt` — instructor options, not requirements.
+See [`course/class_notes.txt`](course/class_notes.txt) — instructor options, not requirements.

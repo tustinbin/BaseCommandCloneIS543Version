@@ -2,26 +2,38 @@
 
 IS543 Project 2 — **Option B** (SwiftUI + Firebase Spark). Custom Star Card **deck CRUD**, shop, sieges, leaderboards.
 
-## Canonical docs
+## Canonical docs (living)
 
 | Doc | Purpose |
 |-----|---------|
 | [`project_rules.md`](project_rules.md) | Living constraints / decisions |
 | [`PROJECT_SPEC.md`](PROJECT_SPEC.md) | Grilled → to-spec project spec |
-| [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf) | Figma storyboard (landscape UI) |
-| [`DATA_DESIGN.md`](DATA_DESIGN.md) + [`erd.png`](erd.png) | Data design / ERD |
+| [`DATA_DESIGN.md`](DATA_DESIGN.md) + [`course/erd.png`](course/erd.png) | Data design / ERD |
+| [`bible/`](bible/) | Numbers & catalogs (confidence-tagged) |
 
-## Course / notes
+## Research & design
 
-- [`HW8.txt`](HW8.txt) — HW8 checklist  
-- [`Project2 Rubric Instructions.txt`](Project2%20Rubric%20Instructions.txt) — Option B requirements  
-- [`class_notes.txt`](class_notes.txt) — instructor options (not requirements)
+| Path | Purpose |
+|------|---------|
+| [`research/base-command-research.md`](research/base-command-research.md) | Gameplay research dump |
+| [`research/video-log.md`](research/video-log.md) | YouTube / screenshot evidence log |
+| [`research/reference_photos/`](research/reference_photos/) | Original Base Command / companion screenshots |
+| [`design/hw8-placeholder/`](design/hw8-placeholder/) | HW8 AI storyboard (not final product art) |
+| [`design/current/`](design/current/) | Your visual design exports (add here) |
 
-## Reference
+## Course
 
-- [`reference_photos/`](reference_photos/) — original Base Command / companion screenshots (art & board reference)  
-- [`basecommandchatresponse/base-command-research.md`](basecommandchatresponse/base-command-research.md) — gameplay research baseline  
+| Path | Purpose |
+|------|---------|
+| [`course/HW8_BaseCommand_Submission.pdf`](course/HW8_BaseCommand_Submission.pdf) | HW8 turn-in PDF |
+| [`course/HW8.txt`](course/HW8.txt) | HW8 checklist |
+| [`course/class_notes.txt`](course/class_notes.txt) | Instructor options (not requirements) |
+| [`Project2 Rubric Instructions.txt`](Project2%20Rubric%20Instructions.txt) | Option B requirements |
+
+## App
+
+[`SwiftCode/BaseCommand.xcodeproj`](SwiftCode/) — landscape SwiftUI shell (visual / navigation only; disposable until your design lands).
 
 ## Status
 
-HW8 design package in progress (spec + storyboard + ERD). App implementation next.
+HW8 design package delivered. **Next:** fill `bible/` from video evidence + bring your own visual design into `design/current/`. Defer combat/Firebase depth until the bible has a playable subset.

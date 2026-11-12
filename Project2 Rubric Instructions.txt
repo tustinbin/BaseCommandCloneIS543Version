@@ -1,0 +1,57 @@
+Project 2
+Project 2 — Recipe Catalog OR Your Own Full-Stack App
+
+Presentations: December 8 (one day before the Project 2 due date, just before finals week) Due: see course calendar
+
+You may use AI and other assistive tools where allowed by the course academic honesty policy. Follow the syllabus if you need to describe how you used them.
+
+OPTION 1 — RECIPE CATALOG (ASSIGNED SPEC)
+
+Build a Recipe Catalog application according to the course documents:
+
+Description: Project 2 Recipe Catalog.pdf  Download 
+Rubric: Project 2 Rubric Recipe App.xlsx  Download 
+Optional extra credit (recommended)
+
+Details are in the Optional section of the Recipe Catalog PDF.
+
+Add one extra feature from the idea list in the catalog.
+Present your extra credit work on presentation day (December 8).
+On the rubric, clearly mark which extra credit items you completed so we can score them if we run short on time in class. If you do not present, the instructor will download or run your app and review the extra feature. If you can present, plan to show it live.
+
+Sample recipes (optional reference): Christmas Cookies, Candy, Pretzels (PDF) — attach or link in Canvas
+
+OPTION 2 — YOUR OWN APP (FULL END-TO-END CRUD + HOSTING)
+
+Instead of the Recipe Catalog, you may build your own application that meets these requirements:
+
+Full end-to-end CRUD (create, read, update, delete) on meaningful domain data
+Hosted and reachable on the public internet (not localhost-only for final submission)
+Demonstrable on presentation day, or reviewable via a deploy URL if you cannot present
+Example monorepo (AWS-oriented infrastructure): https://github.com/byu-professor-john-christiansen/byu-professorc-monorepo
+
+For Option 2, use the same rigor as a written spec:
+
+mattpocock/skills on GitHub — grill-me-docs (stress-test your docs and requirements) - 
+Same repo — to-spec (turn ideas into a clear implementation spec)
+For project 2 I'm allowing In ANY Mobile Language (Not required to do just apple, can use react native, flutter, or stick with apple) -- This is Mobile Platform Development class so opening it up to you! If it works on a phone e2e, can be distributed and put on a phone you are doing well!
+Submit a short project spec (problem, users, entities, CRUD flows, hosting choice) before or with your milestone check-in, per your instructor’s deadline.
+
+HOSTING OPTIONS (OPTION 1 OR 2)
+
+Pick one platform and document it in your README:
+
+AWS
+Firebase
+Supabase
+Google Cloud Run
+Your README should include: deploy URL, how to run locally, and which secrets or environment variables graders need (use placeholders — never commit real keys).
+
+PRESENTATIONS — DECEMBER 8
+
+Short demo of core CRUD and hosting
+Option 1: extra credit feature if you marked it on the rubric
+Option 2: your spec’s main user flows and why you chose your stack
+CHOOSING AN OPTION
+
+Option 1 follows the Recipe Catalog PDF and rubric exactly. Option 2 is for a custom product with the same bar for CRUD, hosting, and presentation. Confirm with your instructor if you need approval for Option 2 scope.

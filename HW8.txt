@@ -1,0 +1,23 @@
+HW 8 — Project 2 kickoff (storyboard, spec, data design)
+
+Get started on Project 2. Read the full project requirements in the assignment (Option 1: Recipe Catalog, or Option 2: your own app).
+
+Storyboard Create a storyboard for your app:
+Option 1: Recipe Catalog screens and flows
+Option 2: your own app screens and flows
+Data design Design the data you will store and how it relates (entities, fields, relationships). Use whatever helps you think clearly—e.g. a UML class diagram, an ERD, or another diagram that fits your stack.
+
+UI (start in code) Begin building the UI in SwiftUI (first screens or navigation shell are fine for this checkpoint).
+
+Spec draft (grill + to-spec) Send your instructor a first draft of your project spec. Use the workflows we discussed in class from mattpocock/skills on GitHub:
+
+grill-me-docs — sharpen and stress-test your requirements/docs
+to-spec — turn the idea into a clear implementation spec
+If anything is unclear, reach out before the due date.
+
+What to turn in (HW 8) Upload one PDF that includes:
+
+Setup on a Agentic AI IDE
+Your storyboard
+Your spec (show that you used grill-me-docs / to-spec—you can include before/after notes or the final spec sections)
+Your data structure / data design diagram(s)

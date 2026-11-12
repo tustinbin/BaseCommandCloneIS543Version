@@ -1,0 +1,22 @@
+11/10/2026 notes
+gemma4 running on an ec2 instance. app api endpoints to pull ai generated data at low cost
+
+/grill me
+
+/issues
+
+/to-spec
+
+back end capabilities end to end crud
+
+stripe payment (llc)
+
+deployment options: supabase, firebase, AWS
+
+terraform for EC2 instance?
+
+google cloud run
+
+front end code in simulator connecting to live backend endpoint
+
+progressive web app?

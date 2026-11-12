@@ -84,7 +84,7 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 - **ProgressionService** (protocol + Firestore implementation + in-memory fake): currency, first-time star claims, shop unlocks, siege result persistence, leaderboard upserts.
 - **Deck / profile store** (same progression boundary): deck CRUD, active deck, ownership checks, copy limits, max 10 decks, “legal for siege” (= 24 cards).
 - **SwiftUI app shell**: Auth, Home, Deck List/Editor, Catalog, Shop, Siege Select, Battlefield, Results, Leaderboard, light pregame dialogue.
-- **Content / bible**: static Star Card catalog, unit types, siege scripts, star pots, copy limits, combat tunables — single bible source of truth for numbers.
+- **Content / bible**: [`bible/`](bible/) is the source of truth for Star Card catalog, unit types, siege scripts, star pots, copy limits, combat tunables — later compiled to local JSON (not hand-tuned only in Swift).
 
 ### Domain rules (locked)
 - Primary CRUD entity: **custom Star Card decks** (not card authoring, not unit decks).

@@ -1,0 +1,19 @@
+HW 9 — SwiftUI UI prototype (frontend only)
+
+This milestone moves you toward the full end-to-end Project 2. For this assignment, focus on the frontend only—no backend or full CRUD required yet.
+
+Build a rough SwiftUI prototype of your app. You do not need every screen finished, but your project should show:
+
+Navigation into most of the main UI areas you plan for the final app
+The app builds and runs on both iPhone and iPad (use appropriate layouts or size classes where needed)
+What to submit
+
+Upload two items:
+
+A ZIP of your Xcode/SwiftUI project (everything needed to open and run it)
+
+A PDF and/or a Loom video that shows screenshots or screen recordings of the main UI in both:
+
+iPhone configuration
+iPad configuration
+Label or call out the main features in your PDF or video so it is easy to see what you have wired up so far.

@@ -50,7 +50,7 @@ Living source of truth. See [`README.md`](README.md) for the doc index.
 | Phase | Focus |
 |-------|--------|
 | **HW8** | Spec, storyboard placeholder, ERD, IDE notes → UI shell (done) |
-| **Now** | Bible evidence pass + your visual design; freeze mockup-chasing |
+| **Schedule** | [`ROADMAP.md`](ROADMAP.md) — Week 1 research + HW9; Week 2 Firebase + bible gate + engine; Weeks 3–4 playable loop + demo |
 | **Dec 8** | Auth, deck CRUD, shop, profile, ≥1 siege, leaderboard |
 | **Out** | AI, Stripe, PvP, full 50-siege campaign as required bar, App Store mandate |
 

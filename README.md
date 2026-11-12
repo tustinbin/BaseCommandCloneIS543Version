@@ -6,6 +6,7 @@ IS543 Project 2 — **Option B** (SwiftUI + Firebase Spark). Custom Star Card **
 
 | Doc | Purpose |
 |-----|---------|
+| [`ROADMAP.md`](ROADMAP.md) | 27-day grilled schedule (HW9 → Dec 8) |
 | [`project_rules.md`](project_rules.md) | Living constraints / decisions |
 | [`PROJECT_SPEC.md`](PROJECT_SPEC.md) | Grilled → to-spec project spec |
 | [`DATA_DESIGN.md`](DATA_DESIGN.md) + [`course/erd.png`](course/erd.png) | Data design / ERD |
@@ -36,4 +37,4 @@ IS543 Project 2 — **Option B** (SwiftUI + Firebase Spark). Custom Star Card **
 
 ## Status
 
-HW8 design package delivered. **Next:** fill `bible/` from video evidence + bring your own visual design into `design/current/`. Defer combat/Firebase depth until the bible has a playable subset.
+HW8 done. **Now (Week 1):** video notes → `research/notes/` + HW9 navigable shell. Full schedule: [`ROADMAP.md`](ROADMAP.md).

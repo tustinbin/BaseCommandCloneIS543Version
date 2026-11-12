@@ -1,6 +1,6 @@
 # Base Command Clone — Project Rules
 
-Living source of truth. Canonical graded spec: [`PROJECT_SPEC.md`](PROJECT_SPEC.md) (grill → to-spec).
+Living source of truth. See [`README.md`](README.md) for the doc index.
 
 ## Project identity
 
@@ -9,10 +9,12 @@ Living source of truth. Canonical graded spec: [`PROJECT_SPEC.md`](PROJECT_SPEC.
 - **Post-class:** Rebrand/retheme; keep content data-driven (`themeKey` / JSON)
 - **Client:** SwiftUI · **Backend:** Firebase Spark (Auth + Firestore) · live backend from simulator
 - **Orientation:** Landscape for hub + siege play
-- **Art direction:** Clean white companion UI + cream/white radial board (see `reference_photos/`). Companion career/stats screens = visual reference only, not our systems.
+- **Art direction:** Geometric landscape UI (Figma mockup). Original game photos in `reference_photos/` for board/companion feel only — career/stats screens are Battlefront companion, not our systems.
 - **Hub:** After login → Siege Home; swipe left Shop; swipe right Decs
-- **Rules baseline:** `basecommandchatresponse/` research; invented numbers only in the **game bible**
-- **Storyboard (canonical):** [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf) from Figma — geometric landscape UI. Notes in `STORYBOARD.md` / `MOCKS.md`.
+- **Rules baseline:** [`basecommandchatresponse/base-command-research.md`](basecommandchatresponse/base-command-research.md); invented numbers only in the **game bible** (later)
+- **Storyboard:** [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf)
+- **Spec:** [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
+- **Data design:** [`DATA_DESIGN.md`](DATA_DESIGN.md) / [`erd.png`](erd.png)
 
 ## Primary CRUD
 
@@ -28,7 +30,6 @@ Living source of truth. Canonical graded spec: [`PROJECT_SPEC.md`](PROJECT_SPEC.
 - Shop: spend currency to **unlock** Star Cards (ownership)
 - Starter unlock set; **0** starting currency (demo/playtest grants OK)
 - Mission **fixed point pots per star**; each star pays **once** (first time earned)
-- Cannot farm a mission after claiming all its star pots (typically after 3★ path)
 - Demo may use **one** siege with boosted pots; more sieges = stretch / real progression
 
 ## Siege / combat
@@ -49,10 +50,10 @@ Living source of truth. Canonical graded spec: [`PROJECT_SPEC.md`](PROJECT_SPEC.
 
 | Phase | Focus |
 |-------|--------|
-| **HW8** | Spec, storyboard, ERD, IDE notes PDF → then UI code same night |
+| **HW8** | Spec, storyboard (Figma PDF), ERD, IDE notes → then UI code |
 | **Dec 8** | Auth, deck CRUD, shop, profile, ≥1 siege, leaderboard |
 | **Out** | AI, Stripe, PvP, full 50-siege campaign as required bar, App Store mandate |
 
-## Class notes (options, not requirements)
+## Class notes
 
-See `class_notes.txt`: `/grill me`, `/to-spec`, `/issues`; hosting options; simulator→live API; Gemma/EC2 AI, Terraform, PWA, Stripe — ignored for class MVP unless we explicitly pull them in.
+See `class_notes.txt` — instructor options, not requirements.

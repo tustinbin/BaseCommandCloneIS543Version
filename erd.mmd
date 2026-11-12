@@ -1,0 +1,101 @@
+erDiagram
+  PlayerProfile ||--o{ Deck : owns
+  PlayerProfile ||--o{ LeaderboardEntry : ranksOn
+  PlayerProfile ||--o{ SiegeStarClaim : claims
+  Deck ||--o{ DeckEntry : contains
+  StarCard ||--o{ DeckEntry : referencedBy
+  StarCard ||--o{ OwnedCard : unlockedAs
+  PlayerProfile ||--o{ OwnedCard : unlocks
+  SiegeDefinition ||--o{ SiegeStarClaim : rewards
+  SiegeDefinition ||--o{ LeaderboardEntry : hasBoard
+  SiegeDefinition ||--o{ EnemySpawn : scripts
+  UnitType ||--o{ EnemySpawn : spawnsAs
+
+  PlayerProfile {
+    string uid PK
+    string email
+    string commanderName
+    int currency
+    string activeDeckId FK
+    timestamp createdAt
+    timestamp updatedAt
+  }
+
+  OwnedCard {
+    string uid FK
+    string starCardId FK
+    timestamp unlockedAt
+  }
+
+  Deck {
+    string id PK
+    string userId FK
+    string name
+    bool isActive
+    timestamp updatedAt
+  }
+
+  DeckEntry {
+    string deckId FK
+    string starCardId FK
+    int quantity
+  }
+
+  StarCard {
+    string id PK
+    string name
+    string themeKey
+    string effectType
+    int maxCopiesInDeck
+    int shopPrice
+    bool starterOwned
+  }
+
+  UnitType {
+    string id PK
+    string name
+    string themeKey
+    int health
+    int firepower
+    int defense
+    int attacks
+    string rangePattern
+  }
+
+  SiegeDefinition {
+    string id PK
+    string name
+    int star1Points
+    int star2Points
+    int star3Points
+    int star1ScoreThreshold
+    int star2ScoreThreshold
+    int star3ScoreThreshold
+    json scriptRef
+  }
+
+  EnemySpawn {
+    string siegeId FK
+    int turn
+    string unitTypeId FK
+    int quadrant
+    int ring
+    string perks
+  }
+
+  SiegeStarClaim {
+    string uid FK
+    string siegeId FK
+    int starLevel
+    int pointsGranted
+    timestamp claimedAt
+  }
+
+  LeaderboardEntry {
+    string siegeId FK
+    string userId FK
+    string commanderName
+    int bestScore
+    int bestStars
+    timestamp updatedAt
+  }

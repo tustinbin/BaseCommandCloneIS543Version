@@ -1,8 +1,23 @@
-# Low-Fi Storyboard (landscape)
+# Storyboard / Visual Mockups (landscape)
 
-Wireframes only — rectangles, labels, flow. No art, no Star Wars imagery.
+## Canonical Figma mockup (use this)
 
-## Flow collage
+**[`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf)** — geometric landscape UI storyboard from Figma.
+
+Preview export: `figma_mockup_preview/page_1.png`
+
+Screens in the Figma board:
+1. Access / Auth  
+2. Home (Siege Home)  
+3. Shop (swipe left)  
+4. Decks (swipe right)  
+5. All Sieges (+ leaderboard)  
+6. Battlefield  
+7. Results (on board)
+
+---
+
+## Older lo-fi collage (superseded by Figma PDF)
 
 ![Low-fi storyboard](vis-storyboard-flow.jpg)
 

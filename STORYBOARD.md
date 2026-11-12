@@ -4,10 +4,9 @@
 **Art direction:** Clean white EA companion style (see `reference_photos/`). Gameplay board = cream/white radial disc + gold ring lines over scenic BG. Menu chrome = white/light gray, black type, gold accents.  
 **Note:** Many reference shots are Battlefront companion career/stats — visual language only, not Base Command deck data.
 
-Visual screenshot mocks live in the **project root** and are shown in [`MOCKS.md`](MOCKS.md):
-- `vis-auth.jpg`, `vis-siege-home.jpg`, `vis-shop.jpg`, `vis-decks.jpg`
-- `vis-leaderboard.jpg`, `vis-battlefield.jpg`, `vis-results.jpg`
-- **Flow collage:** `vis-storyboard-flow.jpg`
+**Canonical visual:** [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf) (Figma geometric landscape UI).
+
+See also [`MOCKS.md`](MOCKS.md) (ASCII wireframes + Figma prompt). Older `vis-storyboard-flow.jpg` is superseded.
 
 ---
 

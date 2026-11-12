@@ -12,7 +12,7 @@ Living source of truth. Canonical graded spec: [`PROJECT_SPEC.md`](PROJECT_SPEC.
 - **Art direction:** Clean white companion UI + cream/white radial board (see `reference_photos/`). Companion career/stats screens = visual reference only, not our systems.
 - **Hub:** After login → Siege Home; swipe left Shop; swipe right Decs
 - **Rules baseline:** `basecommandchatresponse/` research; invented numbers only in the **game bible**
-- **Storyboard:** `STORYBOARD.md` + Figma-style flow images in Cursor `assets/`
+- **Storyboard (canonical):** [`Base Command Visual Mockup.pdf`](Base%20Command%20Visual%20Mockup.pdf) from Figma — geometric landscape UI. Notes in `STORYBOARD.md` / `MOCKS.md`.
 
 ## Primary CRUD
 

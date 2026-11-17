@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "source": "bible/units.md",
+  "playerRegular": [
+    {
+      "id": "rebel_soldier",
+      "name": "Rebel Soldier",
+      "range": {
+        "kind": "fixed",
+        "rings": [
+          1
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "attacks": 3,
+          "firepower": 3,
+          "evasion": 1,
+          "health": 6
+        },
+        {
+          "rank": 1,
+          "attacks": 3,
+          "firepower": 3,
+          "evasion": 1,
+          "health": 7
+        },
+        {
+          "rank": 2,
+          "attacks": 4,
+          "firepower": 3,
+          "evasion": 1,
+          "health": 7
+        },
+        {
+          "rank": 3,
+          "attacks": 4,
+          "firepower": 4,
+          "evasion": 1,
+          "health": 7
+        }
+      ]
+    },
+    {
+      "id": "t47_airspeeder",
+      "name": "T-47 / Snowspeeder",
+      "range": {
+        "kind": "fixed",
+        "rings": [
+          2,
+          3
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "attacks": 2,
+          "firepower": 4,
+          "evasion": 2,
+          "health": 7
+        },
+        {
+          "rank": 1,
+          "attacks": 2,
+          "firepower": 4,
+          "evasion": 2,
+          "health": 8
+        },
+        {
+          "rank": 2,
+          "attacks": 3,
+          "firepower": 4,
+          "evasion": 2,
+          "health": 8
+        },
+        {
+          "rank": 3,
+          "attacks": 3,
+          "firepower": 5,
+          "evasion": 2,
+          "health": 8
+        }
+      ]
+    },
+    {
+      "id": "a_wing",
+      "name": "A-Wing",
+      "range": {
+        "kind": "zone_unlock",
+        "byRank": {
+          "0": "zone_1",
+          "1": "zone_2",
+          "2": "zone_3",
+          "3": "all_zones"
+        }
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "attacks": 2,
+          "firepower": 4,
+          "evasion": 3,
+          "health": 7
+        },
+        {
+          "rank": 1,
+          "attacks": 2,
+          "firepower": 4,
+          "evasion": 3,
+          "health": 7
+        },
+        {
+          "rank": 2,
+          "attacks": 3,
+          "firepower": 4,
+          "evasion": 3,
+          "health": 7
+        },
+        {
+          "rank": 3,
+          "attacks": 3,
+          "firepower": 5,
+          "evasion": 3,
+          "health": 8
+        }
+      ]
+    },
+    {
+      "id": "x_wing",
+      "name": "X-Wing",
+      "range": {
+        "kind": "fixed",
+        "rings": [
+          3,
+          4
+        ]
+      },
+      "ranks": [
+        {
+          "rank": 0,
+          "attacks": 2,
+          "firepower": 5,
+          "evasion": 2,
+          "health": 7
+        },
+        {
+          "rank": 1,
+          "attacks": 2,
+          "firepower": 5,
+          "evasion": 2,
+          "health": 8
+        },
+        {
+          "rank": 2,
+          "attacks": 3,
+          "firepower": 5,
+          "evasion": 2,
+          "health": 8
+        },
+        {
+          "rank": 3,
+          "attacks": 3,
+          "firepower": 6,
+          "evasion": 2,
+          "health": 8
+        }
+      ]
+    }
+  ],
+  "playerHeroes": [
+    {
+      "id": "luke_skywalker",
+      "name": "Luke Skywalker",
+      "attacks": 3,
+      "firepower": 4,
+      "evasion": 4,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "squad_leader",
+        "behemoth"
+      ],
+      "special": "Push engaged enemy 1 space; +2 evasion vs Vader"
+    },
+    {
+      "id": "han_solo",
+      "name": "Han Solo",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 3,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "first_strike",
+        "rage"
+      ],
+      "special": "On win: 2 discard points; retrieve Millennium Falcon if used/discarded"
+    },
+    {
+      "id": "leia_organa",
+      "name": "Leia Organa",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 5,
+      "health": 5,
+      "shield": 1,
+      "perks": [
+        "protect",
+        "ion_weapon"
+      ],
+      "special": "On engage: strip all enemy perks in that coordinate"
+    },
+    {
+      "id": "nien_nunb",
+      "name": "Nien Nunb",
+      "attacks": 2,
+      "firepower": 3,
+      "evasion": 4,
+      "health": 5,
+      "shield": 0,
+      "perks": [
+        "heavy_weapons",
+        "overload"
+      ],
+      "special": "On win: pick 1 of 3 star cards (2 up, 1 down)"
+    },
+    {
+      "id": "lando_calrissian",
+      "name": "Lando Calrissian",
+      "attacks": 5,
+      "firepower": 3,
+      "evasion": 3,
+      "health": 8,
+      "shield": 0,
+      "perks": [
+        "heavy_weapons",
+        "luck"
+      ],
+      "special": "On win: retrieve Nien if used/discarded"
+    },
+    {
+      "id": "chewbacca",
+      "name": "Chewbacca",
+      "attacks": 2,
+      "firepower": 6,
+      "evasion": 2,
+      "health": 8,
+      "shield": 0,
+      "perks": [
+        "first_strike",
+        "overload"
+      ],
+      "special": "Push all enemies 1; retrieve Han if used/discarded"
+    },
+    {
+      "id": "jyn_erso",
+      "name": "Jyn Erso",
+      "attacks": 1,
+      "firepower": 1,
+      "evasion": 3,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "first_strike",
+        "behemoth"
+      ],
+      "special": "Set enemy evasion to 0; redraw all unit cards"
+    }
+  ],
+  "specialUnits": [
+    {
+      "id": "millennium_falcon",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 2,
+      "health": 6,
+      "shield": 1,
+      "perks": [
+        "first_strike",
+        "squad_leader"
+      ]
+    },
+    {
+      "id": "r5_d4",
+      "attacks": 3,
+      "firepower": 3,
+      "evasion": 1,
+      "health": 4,
+      "shield": 0,
+      "perks": [],
+      "special": "Removes enemy perks in coordinate on engage"
+    }
+  ],
+  "enemyRegular": [
+    {
+      "id": "probe_droid",
+      "name": "Probe Droid",
+      "rank0": {
+        "attacks": 3,
+        "firepower": 3,
+        "evasion": 1,
+        "health": 4
+      },
+      "rank3": {
+        "attacks": 4,
+        "firepower": 4,
+        "evasion": 1,
+        "health": 6
+      },
+      "perks": [
+        "speed_acceleration"
+      ],
+      "notes": "spawns extras"
+    },
+    {
+      "id": "stormtrooper",
+      "name": "Stormtrooper",
+      "rank0": {
+        "attacks": 3,
+        "firepower": 3,
+        "evasion": 1,
+        "health": 6
+      },
+      "rank3": {
+        "attacks": 4,
+        "firepower": 4,
+        "evasion": 1,
+        "health": 7
+      },
+      "perks": []
+    },
+    {
+      "id": "speeder_bike",
+      "name": "Speeder Bike",
+      "rank0": {
+        "attacks": 2,
+        "firepower": 3,
+        "evasion": 2,
+        "health": 5
+      },
+      "rank3": {
+        "attacks": 3,
+        "firepower": 4,
+        "evasion": 2,
+        "health": 6
+      },
+      "perks": [
+        "speed_acceleration"
+      ]
+    },
+    {
+      "id": "tie_fighter",
+      "name": "TIE Fighter",
+      "rank0": {
+        "attacks": 2,
+        "firepower": 4,
+        "evasion": 3,
+        "health": 7
+      },
+      "rank3": {
+        "attacks": 3,
+        "firepower": 4,
+        "evasion": 4,
+        "health": 8
+      },
+      "perks": []
+    },
+    {
+      "id": "tie_interceptor",
+      "name": "TIE Interceptor",
+      "rank0": {
+        "attacks": 2,
+        "firepower": 5,
+        "evasion": 2,
+        "health": 7
+      },
+      "rank3": {
+        "attacks": 3,
+        "firepower": 6,
+        "evasion": 2,
+        "health": 8
+      },
+      "perks": []
+    },
+    {
+      "id": "at_st",
+      "name": "AT-ST",
+      "rank0": {
+        "attacks": 2,
+        "firepower": 5,
+        "evasion": 2,
+        "health": 8
+      },
+      "rank3": {
+        "attacks": 3,
+        "firepower": 6,
+        "evasion": 2,
+        "health": 9
+      },
+      "perks": []
+    },
+    {
+      "id": "at_at",
+      "name": "AT-AT",
+      "rank0": {
+        "attacks": 2,
+        "firepower": 7,
+        "evasion": 4,
+        "health": 10
+      },
+      "rank3": {
+        "attacks": 3,
+        "firepower": 8,
+        "evasion": 4,
+        "health": 11
+      },
+      "perks": [
+        "protect"
+      ]
+    }
+  ],
+  "enemyHeroes": [
+    {
+      "id": "slave_i",
+      "name": "Slave I",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 3,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "protect"
+      ],
+      "special": "No hero AI menu; moves like normal"
+    },
+    {
+      "id": "boba_fett",
+      "name": "Boba Fett",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 2,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "recovery",
+        "resurrection"
+      ],
+      "special": "Advance 1/2, zone move, remove shield, base ranged attack, stay still; spawn score penalty"
+    },
+    {
+      "id": "darth_vader",
+      "name": "Darth Vader",
+      "attacks": 4,
+      "firepower": 7,
+      "evasion": 4,
+      "health": 8,
+      "shield": 0,
+      "perks": [
+        "protect",
+        "overload"
+      ],
+      "special": "Advance 1/2, remove shield, neutralize unit card, zone move, stay still"
+    },
+    {
+      "id": "palpatine",
+      "name": "Palpatine",
+      "attacks": 3,
+      "firepower": 8,
+      "evasion": 3,
+      "health": 8,
+      "shield": 0,
+      "perks": [
+        "rage",
+        "overload"
+      ],
+      "special": "Advance 1, remove 1–2 shields, neutralize unit card, zone move, summon reinforcements"
+    },
+    {
+      "id": "greedo",
+      "name": "Greedo",
+      "attacks": 5,
+      "firepower": 5,
+      "evasion": 3,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "squad_leader",
+        "rage"
+      ],
+      "special": "Advance 1/2, score decrease, cannon energy down, steal discard points"
+    },
+    {
+      "id": "dengar",
+      "name": "Dengar",
+      "attacks": 7,
+      "firepower": 3,
+      "evasion": 3,
+      "health": 9,
+      "shield": 0,
+      "perks": [
+        "heavy_weapons",
+        "behemoth"
+      ],
+      "special": "Advance 1/2, seal unit/star card, remove base boost"
+    },
+    {
+      "id": "bossk",
+      "name": "Bossk",
+      "attacks": 1,
+      "firepower": 6,
+      "evasion": 4,
+      "health": 7,
+      "shield": 0,
+      "perks": [
+        "first_strike",
+        "heavy_weapons"
+      ],
+      "special": "Advance 1, weaken ally cards, escape + HP recovery"
+    },
+    {
+      "id": "orson_krennic",
+      "name": "Orson Krennic",
+      "attacks": 3,
+      "firepower": 5,
+      "evasion": 3,
+      "health": 7,
+      "shield": 2,
+      "perks": [
+        "first_strike",
+        "squad_leader"
+      ],
+      "special": "Advance 1 + (wiki list incomplete)"
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 # Game bible — core rules & tunables
 
+**This file is canonical** for board, hand, turn, base/cannon, combat, and scoring.  
 Confidence: `observed` | `inferred` | `invented`  
-Evidence: cite `research/video-log.md` Log IDs where possible.  
-Research prose: `research/base-command-research.md`.
+Evidence snapshots: [`research/wiki/rules.md`](../research/wiki/rules.md). Grill log: [`research/wiki/DECISIONS.md`](../research/wiki/DECISIONS.md).  
+Catalogs: [`units.md`](units.md) · [`star-cards.md`](star-cards.md) · [`perks.md`](perks.md) · [`sieges.md`](sieges.md).
 
 ---
 
@@ -10,11 +11,14 @@ Research prose: `research/base-command-research.md`.
 
 | Fact | Value | Confidence | Evidence |
 |------|-------|------------|----------|
-| Layout | 4 quadrants × 4 rings + central base | observed | research / EA descriptions |
+| Layout | 4 sectors × ranges 1–4 + central base (range 0) | observed | research wiki rules |
+| Coordinate | One sector × one range; max **2** units; 16 cells | observed | research wiki rules |
+| Ring index | **1** = adjacent to base; **4** = outer spawn | observed | research wiki rules |
+| Default spawn | Range **4** (unless Concealment → range 2) | observed | research wiki rules |
+| Advance | One space toward center per turn (unless Speed Acceleration / hero moves) | observed | research wiki rules |
+| Sector lock | Enemies stay in sector except some heroes with zone move | observed | research wiki rules |
 | Orientation | Landscape play | invented (product) | project_rules |
-| UI style | Schematic (not EA art recreation) | invented (product) | project_rules |
-
-Ring numbering convention (inner → outer): **TBD** — confirm in video (`1` = adjacent to base?).
+| UI style | Schematic geometric (not EA art) | invented (product) | project_rules |
 
 ---
 
@@ -22,28 +26,27 @@ Ring numbering convention (inner → outer): **TBD** — confirm in video (`1` =
 
 | Fact | Value | Confidence | Evidence |
 |------|-------|------------|----------|
-| Custom deck size | 24 Star Cards | observed | EA custom deck UI |
-| Draw per turn | 3 Unit + 3 Star | observed | contemporary reviews |
-| Unit pool | Separate fixed pool (not in 24) | observed | research |
+| Star deck size | 24 | observed | research wiki rules |
+| Custom decks (wiki) | Starter + 2 slots | observed | research wiki rules |
+| Max decks (product) | **10** | invented (product) | project_rules |
+| Draw | 3 Unit + 3 Star; unused kept | observed | research wiki rules |
+| Unit pool | Fixed per siege (not in 24) | observed | research wiki rules |
+| Discard points | +1/turn; max 2; before play/cannon | observed | research wiki rules |
+| Heroes | In star deck; **max 1 hero / deck**; do **not** rank up | observed | research wiki heroes |
 | Draft decks | &lt; 24 OK | invented (product) | project_rules |
 | Legal for siege | Active deck Σ qty = 24 | invented (product) | project_rules |
-| Max decks | 10 | invented (product) | project_rules |
 
 ---
 
-## Turn loop (skeleton)
-
-Order from research (confirm with video timestamps):
-
-1. Draw / replenish hand (3 unit + 3 star) — **confirm exact timing**  
-2. Play units / star cards / use cannon (player phase) — **TBD detail**  
-3. End turn → cannon charge, enemies advance, cards replenished — **confirm order**
+## Turn loop
 
 | Step | Detail | Confidence | Evidence |
 |------|--------|------------|----------|
-| Enemy advance | Toward base each turn end | observed | research |
-| Cannon charge | Charges over turns | observed | research |
-| Mid-siege save | None (quit = no reward) | invented (product) | project_rules |
+| Start turn | Gain discard point (cap 2); hand already has kept cards; draw/refill to 3+3 as needed | observed / inferred | research wiki §2.3 |
+| Optional discard | Before cards/cannon | observed | research wiki rules |
+| Player phase | Play units / star cards / base cannon (once) | observed | research wiki rules |
+| End turn | Enemies advance; unit shields regen +1 if applicable; cannon energy progresses next turn start | observed | research wiki rules |
+| Mid-siege save | None | invented (product) | project_rules |
 
 ---
 
@@ -51,25 +54,40 @@ Order from research (confirm with video timestamps):
 
 | Fact | Value | Confidence | Evidence |
 |------|-------|------------|----------|
-| Base HP | 10 total (one source) | inferred | research § base HP — **verify on video** |
-| Directional shields | Four shield walls (one source) | inferred | research — **verify** |
-| Cannon vs Protected | Can strip Protected | observed | EA example |
-| Cannon damage | TBD | — | video log |
-| Charge rate | TBD | — | video log |
+| Base HP | **10** (no auto-regen unless card) | observed | research wiki rules |
+| Shields | **4** directional | observed | research wiki rules |
+| Hit on shield (range 1) | Shield breaks; attacker takes **1** | observed | research wiki rules |
+| Overcharge | Not destroyed; attacker takes **2**; ends next turn start | observed | research wiki rules |
+| Enemy at range 0 | Damages base by unit **firepower**, then disappears | observed | research wiki rules |
+| Ion Weapon (enemy) vs base | Ignores normal shield (not overcharge) into base | observed | research wiki rules |
+| Cannon range | ≤ 3 | observed | research wiki rules |
+| Cannon damage | = energy; **ignores evasion**; once/turn | observed | research wiki rules |
+| Cannon energy | After shot: refill path **1 → 3 → 5** (max 5) | observed | research wiki rules |
+| Cannon vs Protect | Can strip Protect with a hit | observed | research wiki / EA |
 
 ---
 
-## Combat tunables
-
-Leave blank until observed. Do not invent for engine work yet.
+## Combat
 
 | Tunable | Value | Confidence | Evidence |
 |---------|-------|------------|----------|
-| Damage formula | TBD (FP vs defense interaction) | — | |
-| Attack exchange rule | Continues until one destroyed or both exhausted attacks | observed | EA combat description |
-| Rank-up on kill / survive | In-siege rank-up; death resets | observed / inferred | research |
+| Stats | Attacks, Firepower, **Evasion**, Health (+ optional shields) | observed | research wiki rules |
+| Naming | Canonical **evasion** (video “Agility”; legacy “defense”) | observed / naming | DECISIONS / DATA_DESIGN |
+| Damage/hit | `max(0, FP − target evasion)` | observed | research wiki rules |
+| Initiative | Player first unless only enemy has First Strike | observed | research wiki rules |
+| Exchange | Alternate until destroyed or attacks exhausted | observed | research wiki rules |
+| Crit (wiki) | Low chance; increased dmg; ignores evasion | observed | research wiki rules |
+| Crit (class MVP) | **20%**; ignores evasion; damage = **FP**; does **not** pierce Protect | invented (product) | grill / ADR-0003 |
+| Luck perk | Crit chance **35%** instead of 20% | invented (product) | grill |
+| Miss (wiki) | Low chance; independent of FP/evasion | observed | research wiki rules |
+| Miss (class MVP) | **None** — use evasion (and Protect/shields) only | invented (product) | grill / ADR-0003 |
+| Unit shields | Block N hits; regen +1/turn end; Ion Grenade strips — see [`perks.md`](perks.md) | observed | research wiki rules |
+| Rank-up | On **kill**; ranks 0–3; defeat resets; heroes do not rank | observed | research wiki rules |
 | Cross-siege unit XP | None | invented (product) | project_rules |
-| RNG sources | Shuffle / draw only; enemies scripted | invented (product) + observed scripted feel | project_rules |
+| Enemy scripts | Fixed per siege | observed | research wiki |
+| Product RNG | Shuffle/draw + crit | invented (product) | project_rules |
+| Perk definitions | [`perks.md`](perks.md) | observed | — |
+| Engine card scope | Implement **starter** effects first; extensible registry for the rest | invented (product) | grill |
 
 ---
 
@@ -77,18 +95,16 @@ Leave blank until observed. Do not invent for engine work yet.
 
 | Fact | Value | Confidence | Evidence |
 |------|-------|------------|----------|
-| Stars | 1–3 per siege | observed | research / UI |
-| Score inputs | TBD (surviving units, speed, etc.) | — | video log |
-| Star score thresholds | Per siege — see `sieges.md` | — | |
+| Stars | 1–3 from score thresholds | observed | research wiki rules |
+| Multiplier | +¼ per kill; ×2 at 4 kills; ×3 at 8; ally death −1 full level | observed | research wiki rules |
+| Remaining HP/shields | Affect end score | observed | research wiki rules |
 | Point pots | Fixed per star; each star pays once | invented (product) | project_rules |
 
 ---
 
-## Open questions (fill via video log)
+## Open / TBD
 
-- [ ] Exact ring index of base-adjacent ring  
-- [ ] Exact end-of-turn order (cannon vs advance vs draw)  
-- [ ] Base HP and shield behavior on video  
-- [ ] Cannon charge ticks and damage  
-- [ ] How rank-up is displayed and stat deltas  
-- [ ] Star thresholds for tutorial / early sieges  
+- [ ] Shop **spend** prices / economy tuning — [`star-cards.md`](star-cards.md) (pots placeholders exist on `siege_01`)
+- [ ] Richer sieges beyond easy `siege_01`
+- [ ] Non-starter card effect implementations (catalog + locks already defined)
+- [ ] Review ambiguous cards list in [`star-cards.md`](star-cards.md)

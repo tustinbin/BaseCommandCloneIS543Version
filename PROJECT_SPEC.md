@@ -12,7 +12,7 @@ A mobile player wants a short, turn-based base-defense session with meaningful d
 
 ## Solution
 
-A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Firebase Spark** (Auth + Firestore). Players sign up with a Commander name, build and manage custom 24-card Star Card decks (CRUD), play scripted single-player sieges on a 4×4 radial board, earn first-time star rewards, unlock cards in a shop, and appear on per-siege leaderboards. Star Wars theming is used for class; content is data-driven so the product can rebrand after the course. Balance numbers live in a game bible for easy tuning.
+A **Flutter** mobile app, **Star Wars Battlefront Base Command Clone**, backed by **Firebase Spark** (Auth + Firestore). Players sign up with a Commander name, build and manage custom 24-card Star Card decks (CRUD), play scripted single-player sieges on a 4×4 radial board, earn first-time star rewards, unlock cards in a shop, and appear on per-siege leaderboards. Star Wars theming is used for class; content is data-driven so the product can rebrand after the course. Balance numbers live in a game bible for easy tuning.
 
 ---
 
@@ -42,7 +42,7 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 22. As a player, I want unit rank-ups to reset between sieges, so that each run starts fair.
 23. As a player, I want Star Cards from my active deck to shuffle and draw into my hand, so that deckbuilding affects play.
 24. As a player, I want enemy placements and behavior to follow a known script for that siege, so that outcomes depend on my strategy—not unfair RNG.
-25. As a player, I want the only randomness to be deck shuffle and draw, so that I can plan around known enemy turns.
+25. As a player, I want enemy scripts fixed and randomness limited to deck shuffle/draw plus documented crit chance (no miss), so that I can plan around known enemy turns.
 26. As a player, I want a Base Cannon that charges over turns and deals damage (and can strip Protected), so that I have a base-level tactical resource.
 27. As a player, I want enemies to advance toward the base at end of turn, so that there is time pressure.
 28. As a player, I want to win by destroying all enemies before the base falls, so that the objective is clear.
@@ -52,7 +52,7 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 32. As a player, I want to receive a star’s points only the first time I earn that star on that mission, so that I am pushed to improve and then progress.
 33. As a player, I want improving from 1★ to 3★ to grant the not-yet-claimed 2★ and 3★ pots, so that retries before a full clear still pay.
 34. As a player, I want re-earning a star I already claimed to give 0 currency, so that I cannot infinite-farm one mission after 3★.
-35. As a player, I want a shop where I spend currency to unlock Star Cards, so that progression expands my deck options.
+35. As a player, I want a shop that shows the full catalog with starters owned and other cards locked (spend/unlock-by-currency when economy is set), so that progression goals are visible.
 36. As a player, I want unlocks to mean ownership for deckbuilding (not buying one physical copy at a time), so that the shop stays simple.
 37. As a player, I want a starter set of unlocked cards and 0 starting currency, so that I can build a legal deck immediately and earn the rest.
 38. As a developer/demoer, I want to grant currency for playtests and demos, so that the shop can be shown without a long grind.
@@ -67,32 +67,32 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 47. As a player, I want mid-siege progress not to be saved for MVP, so that quit/abandon simply yields no reward and a fresh restart.
 48. As a player, I want schematic board UI that clearly shows zones and the base, so that I can learn geometry without needing EA-quality art.
 49. As a course student, I want a written spec, storyboard, and data design for HW8, so that planning is graded before full implementation.
-50. As a player, I want combat to follow documented structure (HP, firepower, defense, attacks, ring/quadrant targeting, Protected) even if exact numbers are approximate, so that the game feels like Base Command.
+50. As a player, I want combat to follow documented structure (HP, firepower, evasion, attacks, ring/quadrant targeting, Protect) even if exact numbers are approximate, so that the game feels like Base Command.
 
 ---
 
 ## Implementation Decisions
 
 ### Product & platform
-- Class product name: **Star Wars Battlefront Base Command Clone**; rebrand after class.
-- Client: **SwiftUI** (iOS Simulator / device); Mac used for demo builds.
+- Class product name: **Star Wars Battlefront Base Command Clone**; rebrand after class; Flutter targets **iOS + Android** long-term.
+- Client: **Flutter** in [`app/`](app/); Mac for iOS Simulator (± Android emu). Archived Swift shell = HW9 fallback only.
 - Backend: **Firebase Spark** — Authentication + Firestore; app talks to the **live** backend.
 - Gameplay: **single-player only**; async **per-siege leaderboards** on Firebase.
 
 ### Architecture modules
-- **SiegeEngine** (pure Swift): turn loop, board state, combat, cannon, draws, win/lose, score/stars for a run. No Firebase.
-- **ProgressionService** (protocol + Firestore implementation + in-memory fake): currency, first-time star claims, shop unlocks, siege result persistence, leaderboard upserts.
-- **Deck / profile store** (same progression boundary): deck CRUD, active deck, ownership checks, copy limits, max 10 decks, “legal for siege” (= 24 cards).
-- **SwiftUI app shell**: Auth, Home, Deck List/Editor, Catalog, Shop, Siege Select, Battlefield, Results, Leaderboard, light pregame dialogue.
-- **Content / bible**: [`bible/`](bible/) is the source of truth for Star Card catalog, unit types, siege scripts, star pots, copy limits, combat tunables — later compiled to local JSON (not hand-tuned only in Swift).
+- **SiegeEngine** (pure game module, Dart-first): turn loop, board, combat, cannon, draws, win/lose, score/stars. No Firebase. Starter card effects first; extensible registry.
+- **ProgressionService** (interface + Firestore + in-memory fake): currency, first-time star claims, ownership/locks, siege results, leaderboard upserts.
+- **Deck / profile store** (same progression boundary): deck CRUD, active deck, ownership, copy limits, max 10 decks, legal siege = 24 cards; signup default starter deck.
+- **Flutter app shell**: Auth, Home, Deck List/Editor, Catalog, Shop (browse + locks), Siege Select, Battlefield, Results, Leaderboard, pregame dialogue.
+- **Content / bible**: [`bible/`](bible/) only source of truth for catalogs/tunables — compile to local JSON. Research = provenance. ADRs: [`docs/adr/`](docs/adr/).
 
 ### Domain rules (locked)
 - Primary CRUD entity: **custom Star Card decks** (not card authoring, not unit decks).
 - Deck size for play: **24** Star Cards (sum of quantities); drafts may be &lt; 24.
 - Units: fixed pool; in-siege rank-up until death then base rank; no permanent unit XP.
-- Enemies: **scripted/deterministic** per siege; RNG only from shuffle/draw.
+- Enemies: **scripted/deterministic** per siege; RNG from shuffle/draw + **20% crit** (Luck 35%); **no miss**.
 - Board: 4×4 zones + central base; cannon charges per turn.
-- Shop: purchase **unlocks** card for account; deck enforces per-card max copies (heroes often 1; generics/AoE higher).
+- Shop: show full catalog; starters owned; others locked; **spend deferred** until economy set; deck enforces max copies.
 - Rewards: fixed points per star per mission; **each star pays once** (first time earned); improving stars grants only unclaimed pots.
 - Demo: may ship **one** siege with boosted pots and/or manual currency; more sieges are stretch toward real progression.
 - Auth required for decks and play; Commander name collected at signup.
@@ -114,7 +114,7 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 
 ### What makes a good test
 - Test **external behavior** at agreed seams only: given inputs → observable outputs.
-- Do **not** test SwiftUI layout, Firebase SDK wiring, or private helpers as the primary suite.
+- Do **not** test Flutter layout, Firebase SDK wiring, or private helpers as the primary suite.
 - Prefer deterministic fixtures (fixed siege script, fixed deck, scripted action sequences).
 
 ### Modules under test
@@ -143,8 +143,8 @@ A SwiftUI iOS app, **Star Wars Battlefront Base Command Clone**, backed by **Fir
 
 ## Further Notes
 
-- Rules baseline: [`research/base-command-research.md`](research/base-command-research.md); invent numbers only when undocumented and record them in [`bible/`](bible/) with confidence tags (+ [`research/video-log.md`](research/video-log.md)).
+- Game facts: look up [`bible/`](bible/) (`GAME_BIBLE.md`, `perks.md`, `units.md`, `star-cards.md`, `sieges.md`). Research: [`research/wiki/`](research/wiki/) extracts + raw dump + [`research/archive/`](research/archive/) + optional [`research/video-log.md`](research/video-log.md) — evidence only; invent undocumented numbers only in bible with confidence tags.
 - Aspiration: restore every research-recoverable Star Card with defined effects over time; class may ship a smaller fully playable subset first (~12–20) and grow.
 - HW8 deliverable: [`course/HW8_BaseCommand_Submission.pdf`](course/HW8_BaseCommand_Submission.pdf) (IDE notes + storyboard placeholder + this spec + data design / ERD).
-- Living constraints: [`project_rules.md`](project_rules.md). Doc index: [`README.md`](README.md).
+- Living constraints: [`project_rules.md`](project_rules.md). Doc index: [`README.md`](README.md). Agent entry: [`AGENTS.md`](AGENTS.md). Vocabulary: [`GLOSSARY.md`](GLOSSARY.md).
 - Visual: HW8 mockup is placeholder only ([`design/hw8-placeholder/`](design/hw8-placeholder/)); product UI follows your design in [`design/current/`](design/current/).

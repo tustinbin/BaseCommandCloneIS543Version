@@ -1,0 +1,72 @@
+[
+  [
+    "﻿Behemoth",
+    "Enemies: Attack +1 and Firepower +1 per turn.Player: When engaged, +1 attack and +1 firepower per turn. Up to +3 is the limit.",
+    "Files"
+  ],
+  [
+    "concealment",
+    "Spawn at range 2 instead of 4. According to the setting, you approached the range 2 in a concealed state, but that doesn't mean that the concealment is released or that you use a range attack before spawning.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc65ZVHDyp7IjQmoEpQ8DXW3YkNyV4Rs2v04jOlPYvb4NCc8Q0QAJo85BBTR7zA-IBbGLh4eJg_9vQrVPnSfOspA.webp"
+  ],
+  [
+    "first strike",
+    "When engaged, attack first. If an enemy unit and a player unit are equipped at the same time, the player unit attacks first.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc58P9S9u2rd2ylBKDL1StFFUPy3zarnbf9hW3ApQ_XUl-PHIOxTr5M2z5BodCyuduOhu41yI-cI3svZUYS4lRO4.webp"
+  ],
+  [
+    "rage",
+    "Each time you hit an enemy attack, firepower increases by 1. Note that firepower increases even if it fits the map weapon.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc7XnxVUvrT52c-gW_0tPdk1ip28qDAod3Rqaqjk-cKXJvNljDBD2XY4ycJMj6SschC6WanuYV86pA8AZ5GnB99s.webp"
+  ],
+  [
+    "heavy weapons",
+    "When engaged, the first attack ignores the opponent's evasion.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc1s86DO9fR483_DS53xavoSJgU3vmZ44_bDXHNhmgpHQlvtiVHZPpHG-MzaFiwzL3Prck-Qh4Y97FGEY1Z5sm8Q.webp"
+  ],
+  [
+    "ion weapon",
+    "Enemies: Inflict +1 damage to aircraft. You can attack while ignoring the base shield, but you cannot ignore the overcharge shield.Player: Deals +1 damage to aircraft and ignores enemy shields.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc3s5tAWapzFAdvhP1iEz22Untt7j4gdnKHTJFwP3yUlpwmudkjqXR_aa-dBQeYvymsH-7A_AYcNyyk2XFS3kYy4.webp"
+  ],
+  [
+    "luck",
+    "The fatality rate is high.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc3wmLAKTXAUGrAtEwaoYR0cx8xjpdqal4d3eCat4ffQ2ZSyjk6d2DECLbm7kgNzYn5Ml-bGzK_1zoq_koPBBh14.png"
+  ],
+  [
+    "overload",
+    "The first attack consumes all attacks. In other words, if a unit has 3 attacks, when the first attack chance comes, it will hit all 3 at once.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc-sWpx4Hx-ivzJz2baAz4i8UxDFsCUhx5YDOxazOaSbgHPHgbCyyOgwe_1J9LzhAVc4togsmWyl1tltNUwz-k60.png"
+  ],
+  [
+    "protect",
+    "Any attack ignores the first damage. The thermal pressure bomb, which is an instant death judgment, cannot be ignored. AT-AT comes out equipped by default. It is different from the protective layer.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOczI87eTdZ-f9Zbo-W5feSSEcS4wIBBdnlnQGa7oIq4JlYQ7PYHruYpFrOrkX0XpIz-d6Fk_dkvyFVf0Ai4u7Gb0.png"
+  ],
+  [
+    "recovery",
+    "Fully recovers HP at the start of each turn. In other words, to catch it, you must finish it within one turn.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc7PNFI6zG6h2iXejfzW2jH5jkv_JU_Eqnw3PEdknbtbyQlxOlBgz6S6qQ10K_9ynmx2Sz1FAhTKkxFLHX88MR6g.png"
+  ],
+  [
+    "resurrection",
+    "If you die, you respawn on the spot. Naturally, resurrected units lose this perk. It doesn't immediately resurrect upon death, it resurrects only after dying once and the battle is over.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc2Tbi6E8grP1v1U7JKG_WfRTiKH9lttCMdfSwN0zjckGD0opUS3Tw-vXVhn2oBf-OGblg6dICw5PpO1yRNdtscs.png"
+  ],
+  [
+    "speed acceleration",
+    "Advances 2 spaces at a time. Probe droids and speeder bikes are basically equipped.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc9U0SH6t2UXS2WKbtTlRpYkPN2pHvlvcy7cG509_-svBGk7Uo7a_4SAlQ2D7C4gv3pAgsuGCIsmPVbhwiAujjn0.png"
+  ],
+  [
+    "squad leader",
+    "Enemy: Appears with 1 additional enemy unit when spawning.Player: After the battle, draw a new star card.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc8LictbU3ViScjdVsaYqYVhsfNaYwXtzFqJVFJ-GaLxwx17KR-B392eGs2QAIE_YGbE2XErLhWD1d4pqb2oFC3s.png"
+  ],
+  [
+    "important goal",
+    "Cannot attack enemies other than the one wearing this perk. Even though it is an important target, an enemy unit that is not necessarily important comes out and harasses the player.",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOcyH4kvVrctFCRc3ShKGyG2StH6MY-ZFHGJM6tgDQW8basVtRmfiknbnPhASbZ4kZg1HlVsbjncpOqVncWCxwXJk.png"
+  ]
+]

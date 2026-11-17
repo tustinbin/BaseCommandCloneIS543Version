@@ -87,7 +87,7 @@ erDiagram
     string themeKey
     int health
     int firepower
-    int defense
+    int evasion  // canonical name; was "defense" / video "agility"
     int attacks
     string rangePattern
   }

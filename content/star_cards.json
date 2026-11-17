@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "source": "bible/star-cards.md",
+  "cards": [
+    {
+      "id": "a_new_hope",
+      "name": "A New Hope",
+      "category": "event",
+      "maxCopies": 1,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Enemy units do not spawn on the next enemy turn.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "card_refresh",
+      "name": "Card Refresh",
+      "category": "event",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Replace all cards. Neutralized cards cannot be replaced.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "defection",
+      "name": "Defection",
+      "category": "event",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Can be used when there are 2 enemies on the coordinates. When used on one enemy, the enemy at the same coordinates engages each other. Depending on the situation, it can be useful.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "flash_grenade",
+      "name": "Flash Grenade",
+      "category": "event",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "All enemies within 1-3 range are incapacitated once.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "reinforcements",
+      "name": "Reinforcements",
+      "category": "event",
+      "maxCopies": 1,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Draw all new unit cards.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "scan_pulse",
+      "name": "Scan Pulse",
+      "category": "event",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Draw and take one of 3 Star Cards (one face down, 2 face up).",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "suppressive_fire",
+      "name": "Suppressive Fire",
+      "category": "event",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Pushes an enemy unit back one coordinate.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "a_wing_shield",
+      "name": "A-Wing Shield",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds one shield when equipped on A-wing.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "concussion_warheads",
+      "name": "Concussion Warheads",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 3 firepower when equipped on an A-wing.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "evasive_maneuvers",
+      "name": "Evasive Maneuvers",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 2 evasion when equipped on an air unit.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "power_distribution",
+      "name": "Power Distribution",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Select and apply one of the following items when mounting on a gas unit. - Firepower +2 - Shield +3 - Ion Weapon Perc",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "proton_torpedoes",
+      "name": "Proton Torpedoes",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped on the X-wing, it grants heavy weapon perc.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "sensor_jammer",
+      "name": "Sensor Jammer",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 2 evasion when equipped on a snowspeeder.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "t47_speed_boost",
+      "name": "T-47 Speed Boost",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped on a snowspeeder, it grants a preemptive strike perk.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "towing_cable",
+      "name": "Towing Cable",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Destroys an AT-AT in one hit when equipped on a snowspeeder. Required when AT-AT comes out.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "x_wing_shield",
+      "name": "X-Wing Shield",
+      "category": "vehicle_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped on the X-wing, adds one protective layer.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "adrenaline_steam",
+      "name": "Adrenaline Steam",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to infantry units, grants rage perk and adds 1 firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "bacta_bomb",
+      "name": "Bacta Bomb",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, grants Squad Leader Perk and all friendly units recover 1 HP per turn when engaged.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "grenade_bombardment",
+      "name": "Grenade Bombardment",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, it grants the Heavy Weapons perk and adds 3 Attack.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "bowcaster",
+      "name": "Bowcaster",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 2 attack and 3 firepower when worn on infantry units.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "cooling_battery",
+      "name": "Cooling Battery",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, grants Behemoth Perk and adds 1 Attack.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "cycler_rifle",
+      "name": "Cycler Rifle",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, grants Heavy Weapon Perk and +2 Firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "hindrance",
+      "name": "Hindrance",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped on an infantry unit, enemies cannot attack that unit.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "explosive_bullet",
+      "name": "Explosive Bullet",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, it gives first strike perk and adds 2 firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "concentrated_fire",
+      "name": "Concentrated Fire",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 3 ATK when worn on infantry units.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "guided_missile",
+      "name": "Guided Missile",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Gives an infantry unit Overload Perk when equipped and adds 1 Attack.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ion_neutralizer",
+      "name": "Ion Neutralizer",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When worn on infantry units, it ignores enemy protection perks and adds 2 firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ion_shot",
+      "name": "Ion Shot",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, it grants the ion weapon perk and adds 2 firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ion_torpedo",
+      "name": "Ion Torpedo",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, it grants the ion weapon perk and adds 2 firepower.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "jump_pack",
+      "name": "Jump Pack",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Increases range by 3 when equipped on infantry units.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "medical_droid",
+      "name": "Medical Droid",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "All units you are currently owned by adding health 2 until the end of the next battle.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "personal_shield",
+      "name": "Personal Shield",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 3 shield when equipped to infantry units.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "pulse_cannon",
+      "name": "Pulse Cannon",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, grants first strike perk and +2 attack.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "scattergun",
+      "name": "Scattergun",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When worn on an infantry unit, adds 1 firepower and pushes enemies back 1 block before battle.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "scout_pistol",
+      "name": "Scout Pistol",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When worn on an infantry unit, it deals 5 damage to the enemy even if it is defeated in battle.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "smart_rocket",
+      "name": "Smart Rocket",
+      "category": "infantry_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped to an infantry unit, it grants Heavy Weapon Perk and adds 3 Firepower. The Rebel Alliance only has soldiers, so based on rank 0, the first hit deals 6 damage, ignoring enemy evasion.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "smoke_shell",
+      "name": "Smoke Shell",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Adds 2 Evasion when equipped by an Infantry Unit.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "stinger_pistol",
+      "name": "Stinger Pistol",
+      "category": "infantry_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When equipped on an infantry unit, any enemy units that survive an engagement with that unit are incapacitated for 2 turns.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "base_shield",
+      "name": "Base Shield",
+      "category": "base_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Rehabilitate the destroyed shields, or overdose the alive shields. The overcharged shield lasts until the next turn starts.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "blaster_cannon",
+      "name": "Blaster Cannon",
+      "category": "base_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "When used, it attacks a random enemy with 1 damage. The number of attacks is equal to the number of other cards used while holding this card. The number of attacks is displayed at the bottom right of the card.https://en.namu.wiki/w/%EC%8A%A4%ED%83%80%EC%9B%8C%EC%A6%88%20%EB%B0%B0%ED%8B%80%ED%94%84%EB%A1%A0%ED%8A%B8/%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%BB%A4%EB%A7%A8%EB%93%9C#fn-1",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "infantry_turret",
+      "name": "Infantry Turret",
+      "category": "base_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Charges base cannon energy to maximum.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "antipersonnel_mines",
+      "name": "Antipersonnel Mines",
+      "category": "base_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "The first unit to reach range 1 after placing on the base takes 6 damage.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "scout_binoculars",
+      "name": "Scout Binoculars",
+      "category": "base_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "A new star card is drawn, and units can attack anywhere on the board. As it is perfectly compatible with the new command, it is also a semi-required card.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "squad_shield",
+      "name": "Squad Shield",
+      "category": "base_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Rebuilds all base shields and overcharges for one turn.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "support_droid",
+      "name": "Support Droid",
+      "category": "base_boost",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Restores 3 base HP. Essential for some sieges where the base starts with low health.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "trap",
+      "name": "Trap",
+      "category": "base_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "When an enemy unit attempts to infiltrate the base, it is immediately destroyed.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "vehicle_turret",
+      "name": "Vehicle Turret",
+      "category": "base_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Base Cannon's next attack is doubled.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ultrasonic_bomb",
+      "name": "Ultrasonic Bomb",
+      "category": "base_boost",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Remove all shields and deal 1 damage.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "bombardment",
+      "name": "Bombardment",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Deal 2 damage to all units in an area.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "dioxis_grenade",
+      "name": "Dioxis Grenade",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "All enemies within the coordinates are poisoned and lose 2 HP per turn.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "disruptor_rifle",
+      "name": "Disruptor Rifle",
+      "category": "attack",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "All aircraft enemies on the board are halved based on their maximum health.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "shock_fuse_grenade",
+      "name": "Shock Fuse Grenade",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Deal 5 damage to a unit.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "inner_perimeter",
+      "name": "Inner Perimeter",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Deal 2 damage to all enemies at range 1.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ion_blast",
+      "name": "Ion Blast",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "All enemies within 1-2 range take 1 damage and lose their perk. Invalid against enemy hero units.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "ion_grenade",
+      "name": "Ion Grenade",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Removes the shields of all enemies within the coordinates and deals 3 damage.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "orbital_strike",
+      "name": "Orbital Strike",
+      "category": "attack",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Deal 5 damage to all enemies in the area. A semi-required card.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "proximity_bomb",
+      "name": "Proximity Bomb",
+      "category": "attack",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Deal 5 damage to a unit.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "shock_grenade",
+      "name": "Shock Grenade",
+      "category": "attack",
+      "maxCopies": 2,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "All units within the coordinates are incapacitated once and take 2 damage.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "thermal_detonator",
+      "name": "Thermal Detonator",
+      "category": "attack",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Deal 4 damage to all enemies within the coordinates.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "thermal_imploder",
+      "name": "Thermal Imploder",
+      "category": "attack",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Remove one unit immediately and discard it. If you put it in, the time to write it will come.",
+      "ambiguous": true,
+      "priceCredits": null
+    },
+    {
+      "id": "elite_training",
+      "name": "Elite Training",
+      "category": "unit_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "When equipped on a unit card, it advances by 1 rank. It is very effective for A-wing, where quick promotion is key.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "new_orders",
+      "name": "New Orders",
+      "category": "unit_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "When equipped on a unit card, it can attack anywhere on the board. A semi-required card.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "squad_leader",
+      "name": "Squad Leader",
+      "category": "unit_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Grants Squad Leader Perk when equipped on a unit card.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "war_veteran",
+      "name": "War Veteran",
+      "category": "unit_boost",
+      "maxCopies": 2,
+      "starter": true,
+      "confidence": "observed + inferred starter",
+      "effect": "Adds 2 ATK when equipped to a unit card.",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "millennium_falcon",
+      "name": "Millennium Falcon",
+      "category": "special_unit",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Unit-like star card: Atk 3 / FP 5 / Eva 2 / HP 6 / Shield 1; First Strike, Squad Leader",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "r5_d4",
+      "name": "R5-D4",
+      "category": "special_unit",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Unit-like star card: Atk 3 / FP 3 / Eva 1 / HP 4; removes enemy perks in coordinate on engage",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "luke_skywalker",
+      "name": "Luke Skywalker",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "han_solo",
+      "name": "Han Solo",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "leia_organa",
+      "name": "Leia Organa",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "nien_nunb",
+      "name": "Nien Nunb",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "lando_calrissian",
+      "name": "Lando Calrissian",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "chewbacca",
+      "name": "Chewbacca",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    },
+    {
+      "id": "jyn_erso",
+      "name": "Jyn Erso",
+      "category": "hero",
+      "maxCopies": 1,
+      "starter": false,
+      "confidence": "observed",
+      "effect": "Hero unit — stats/specials in [`units.md`](units.md)",
+      "ambiguous": false,
+      "priceCredits": null
+    }
+  ],
+  "defaultStarterDeck": [
+    {
+      "starCardId": "a_new_hope",
+      "quantity": 1
+    },
+    {
+      "starCardId": "defection",
+      "quantity": 2
+    },
+    {
+      "starCardId": "reinforcements",
+      "quantity": 1
+    },
+    {
+      "starCardId": "suppressive_fire",
+      "quantity": 2
+    },
+    {
+      "starCardId": "base_shield",
+      "quantity": 2
+    },
+    {
+      "starCardId": "trap",
+      "quantity": 2
+    },
+    {
+      "starCardId": "bombardment",
+      "quantity": 2
+    },
+    {
+      "starCardId": "inner_perimeter",
+      "quantity": 2
+    },
+    {
+      "starCardId": "ion_blast",
+      "quantity": 2
+    },
+    {
+      "starCardId": "elite_training",
+      "quantity": 2
+    },
+    {
+      "starCardId": "new_orders",
+      "quantity": 2
+    },
+    {
+      "starCardId": "squad_leader",
+      "quantity": 2
+    },
+    {
+      "starCardId": "war_veteran",
+      "quantity": 2
+    }
+  ],
+  "ownedAtSignup": [
+    "a_new_hope",
+    "base_shield",
+    "bombardment",
+    "defection",
+    "elite_training",
+    "inner_perimeter",
+    "ion_blast",
+    "new_orders",
+    "reinforcements",
+    "squad_leader",
+    "suppressive_fire",
+    "trap",
+    "war_veteran"
+  ],
+  "ambiguousIds": [
+    "jump_pack",
+    "medical_droid",
+    "power_distribution",
+    "blaster_cannon",
+    "bacta_bomb",
+    "hindrance",
+    "scout_binoculars",
+    "thermal_imploder"
+  ]
+}

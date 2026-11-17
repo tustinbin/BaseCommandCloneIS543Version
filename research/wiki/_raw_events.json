@@ -1,0 +1,110 @@
+[
+  [
+    "﻿new hope",
+    " 1",
+    "Property",
+    "card renewal",
+    " 2",
+    " 3",
+    "Files"
+  ],
+  [
+    "",
+    "limit",
+    "1",
+    "",
+    "limit",
+    "1",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc2lgKa_A7vEkCv1qVlxw3UMOyCA3vpUCuiEjd1nmbEDAJMJN6VK3It7UwSMeUBYFJQeMu5nRgy1OPd-ClNTaNGHPwjVtu6DTjQ6el3bGFOOyA7wx2eF7YIMTXeFVwNEaucxe7ptR6zONFi2zVbx-xOA.webp, data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc6jslMVGg2sWCDwMVY_DfA5QroU7irLXfNTWIzXK3VfTR49ig1IOCR00lB-4cp35L55HcUPv6Ajfr25jdw8_S0-lr5pQ0kNdUPb_u5jK8tHfdgjubXt5Ve9o3JAVq_j45vpcOHE8rKabav_hPpV-iSU.webp"
+  ],
+  [
+    "",
+    "explanation",
+    "Enemy units do not spawn on the next enemy turn.",
+    "",
+    "explanation",
+    "Replace all cards. Neutralized cards cannot be replaced.",
+    ""
+  ],
+  [
+    "conversion",
+    "",
+    "",
+    "flash grenade",
+    "",
+    "",
+    ""
+  ],
+  [
+    "",
+    "limit",
+    "2",
+    "",
+    "limit",
+    "2",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc-ZxkeulNU2VbbbjRxN6RrqyxPluRdgvPtyK582YVtnZtwVMjXJcj-OSSPVxnJr2c2kTbD6zZdOwmaWCp9RggL4ydFhSPdyLKWxSP78yGNSeHHjb-lZ5wE0RcHzjiD7SDfZlBBvWFU3DxAHlHeZ9PVU.webp, data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOczLwRVtCXuqDakinu84r_8lkePe2dhc8vT-NhcWsZTfS4mw0Vyi2d967nVuQPG7u5sJJdL1qDvc21vVN1gbiAF0.webp"
+  ],
+  [
+    "",
+    "explanation",
+    "Can be used when there are 2 enemies on the coordinates. When used on one enemy, the enemy at the same coordinates engages each other. Depending on the situation, it can be useful.",
+    "",
+    "explanation",
+    "All enemies within 1-3 range are incapacitated once.",
+    ""
+  ],
+  [
+    "augmentation",
+    "",
+    "",
+    "scan pulse",
+    "",
+    "",
+    ""
+  ],
+  [
+    "",
+    "limit",
+    "1",
+    "",
+    "limit",
+    "2",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc6W7bXPetR9UsxdcnGMZ-Wtr_nzArSh3CfHm5VjqBkZO6YjGIELG4Vky9THaP-JoRwOT4ARwprbmWUncc21C_eb0VC10BlJuUwijsUPRZzcU1zHf2ZUaBYG2LqCqk0L9CWfmwJLfIuTiXNJ2ebw9Pr8.webp, data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc-2gDNggc3ZncKIknr61nfQlwajuEH8Bxd8oJ0g3U_G992e6zzkzt5BgdB-jfXTzJQt4jgq9kGLd6v5DaOKqUpYI7COKFwfm99wZn3-4kHiY3vlKxdqnBoNMd8-goUI7xPa3_fiNtI8TnRr2IRMWoXc.webp"
+  ],
+  [
+    "",
+    "explanation",
+    "Draw all new unit cards.",
+    "",
+    "explanation",
+    "Draw and take one of 3 Star Cards (one face down, 2 face up).",
+    ""
+  ],
+  [
+    "suppression fire",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  [
+    "",
+    "limit",
+    "2",
+    "",
+    "",
+    "",
+    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjMwNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=, https://i.namu.wiki/i/uEXH-qFNwdNyCygyNhVOc7TroWyuLgqLzENFcSIqBmrdDlfRzaoKVJPyyz9oZmuOlvwxdtOTyDgkPfnXNH_xCVMOcrwRRY0Hm0njF7Qwo_j3rOiudfeYfTyFDABuwPdnUSJ3dyA80RQIhh3IbNmeTtqTMJJBKhTvlvY6uJUR-0s.webp"
+  ],
+  [
+    "",
+    "explanation",
+    "Pushes an enemy unit back one coordinate.",
+    "",
+    "",
+    "",
+    ""
+  ]
+]

@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+# Local Matt Pocock issue scratch (keep folder via .gitkeep; ignore contents)
+.scratch/*
+!.scratch/.gitkeep
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.swiftpm/
+GoogleService-Info.plist
+.env
+.env.*

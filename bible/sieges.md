@@ -1,76 +1,83 @@
 # Siege definitions
 
-Scripted enemies; star thresholds & point pots. Class may ship **one** demo siege first.
+Canonical siege index and demo siege for implementers.  
+Evidence snapshot (campaign names): [`research/wiki/sieges-list.md`](../research/wiki/sieges-list.md).
+
+**Product rule:** each star pot pays **once** per `(user, siege, starLevel)`.
 
 ---
 
-## Shared fields
-
-```
-id:
-name:
-unlock_rule:          # e.g. always | complete:<siegeId>
-star1_score_threshold: TBD
-star2_score_threshold: TBD
-star3_score_threshold: TBD
-star1_points:          # product currency pot — invented until set
-star2_points:
-star3_points:
-script:                # enemy spawns by turn — see below
-confidence:
-evidence:
-```
-
-**Product rule:** each star pot pays **once** per `(user, siege, starLevel)` — see project_rules / DATA_DESIGN.
-
----
-
-## Demo / tutorial siege (MVP)
+## Demo / tutorial (class) — `siege_01`
 
 | Field | Value | Confidence | Evidence |
 |-------|-------|------------|----------|
-| id | `siege_01` | invented (product id) | |
-| name | The First Line _(placeholder — rename from footage)_ | invented | HW8 mock copy |
+| id | `siege_01` | invented (product) | project_rules / grill |
+| name | Welcome to Base Command / The First Line | inferred | campaign index + HW8 mock |
 | unlock | always | invented (product) | |
-| star thresholds | TBD / TBD / TBD | — | video log |
-| star pots (currency) | TBD — may boost for demo | invented (product) | project_rules |
-| enemy script | TBD | — | video log |
+| Difficulty | Easy tutorial (replace with richer script before Dec 9 if time) | invented (product) | grill |
+| star1 score threshold | **100** | invented (product) | grill |
+| star2 score threshold | **250** | invented (product) | grill |
+| star3 score threshold | **500** | invented (product) | grill |
+| star1 pot (credits) | **50** | invented (product) | grill placeholder |
+| star2 pot (credits) | **100** | invented (product) | grill placeholder |
+| star3 pot (credits) | **150** | invented (product) | grill placeholder |
+| unit pool | Soldier, T-47, A-Wing, X-Wing (standard) | observed | wiki |
+| enemy heroes / AT-AT | None in this script | invented (product) | grill |
 
-### Spawn script table (fill from video)
+### Spawn script (`invented` — easy)
 
-| Turn | unitTypeId | quadrant | ring | perks | Confidence | Evidence |
-|------|------------|----------|------|-------|------------|----------|
-| | | | | | | |
+Sectors: `N=0`, `E=1`, `S=2`, `W=3`. Range 4 = outer spawn unless noted.
 
----
+| Turn | Unit | Sector | Range | Perks | Notes |
+|------|------|--------|-------|-------|-------|
+| 1 | stormtrooper | 0 | 4 | — | |
+| 1 | probe_droid | 2 | 4 | speed_acceleration | |
+| 2 | stormtrooper | 1 | 4 | — | |
+| 3 | probe_droid | 3 | 4 | speed_acceleration | |
+| 4 | stormtrooper | 0 | 4 | — | |
+| 4 | stormtrooper | 2 | 4 | — | |
+| 5 | probe_droid | 1 | 4 | speed_acceleration | |
+| 6 | stormtrooper | 3 | 4 | — | |
+| 7 | stormtrooper | 1 | 4 | — | |
+| 7 | probe_droid | 0 | 4 | speed_acceleration | |
+| 8 | — | — | — | — | No spawn; clear remaining |
 
-## Stretch sieges
-
-Placeholder rows only — do not invent scripts until needed.
-
-| id | name | unlock | Status |
-|----|------|--------|--------|
-| siege_02 | Crossing Point _(placeholder)_ | complete siege_01 | locked / undefined |
-| siege_03 | The Outer Ring _(placeholder)_ | complete siege_02 | locked / undefined |
-| siege_04 | Last Stand _(placeholder)_ | complete siege_03 | locked / undefined |
-
-Original game claimed many sieges (50+ / later 60). **Not** a class MVP requirement.
-
----
-
-## Leaderboard
-
-| Fact | Value | Confidence |
-|------|-------|------------|
-| Scope | Per-siege | invented (product) |
-| Fields | commanderName, bestScore, bestStars | invented (product) |
-| Submit | Auto on finish if best | invented (product) |
+After turn 8, if board clear → win; if base HP 0 → lose. Tune freely; tag stays `invented`.
 
 ---
 
-## Open questions
+## Campaign index (names — observed)
 
-- [ ] Official name / number of the first tutorial siege  
-- [ ] Wave composition and turn count for early sieges  
-- [ ] Visible star score thresholds on results screen  
-- [ ] Whether later sieges change board rules or only scripts  
+Daily siege: wiki notes rotating daily with bonus credits — optional / post-class.
+
+### First Command
+
+Welcome to Base Command; Scouting Party; Return of the Empire; Viper Probe Recon; Ion Weapon Forces; AT-ST Access; Walker Raid; Hunter Boba Fett
+
+### Guardian of the Rebel Alliance
+
+Block; Wrath of the Empire; Stormtrooper Raid; Rise of the Empire; Guardian of the Empire; Vader's Choice
+
+### Empire's Behemoth
+
+Behemoth; Injury Recovery Attack; Heavy Weapons; Temptation of the Dark Side; Amnesty Raid; Dangerous Behemoth; Crisis Situation
+
+### Emperor's Will
+
+Dark Bounty; Emperor's Gesture; Dangerous Stormtrooper; Final Attack
+
+### Battle of Jakku
+
+Land Never Seen; Fighter Squadron; Speeder Bike Attack; Rebel vs Villain; Turning Point
+
+### Outer Rim
+
+Hunter And…; Stormtrooper Shield; Rookie Stand Up; Return of Greedo; Surprise Attack; Vicious Attack; Bounty Hunters; Heavy Equipment Raid; Shield Walker Raid; Contract in Vain
+
+### Hero Holiday
+
+Hero Holiday I–IV
+
+### Master variants
+
+First Command / Defender / Imperial Colossus / etc. “II” remasters listed in wiki §6.8+ (names only until scripted)

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": "bible/GAME_BIBLE.md",
+  "board": {
+    "sectors": 4,
+    "ranges": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "baseRange": 0,
+    "maxUnitsPerCoordinate": 2,
+    "defaultSpawnRange": 4,
+    "concealmentSpawnRange": 2
+  },
+  "hand": {
+    "starDeckSize": 24,
+    "maxDecks": 10,
+    "drawUnit": 3,
+    "drawStar": 3,
+    "discardPointsPerTurn": 1,
+    "discardPointsMax": 2,
+    "maxHeroesPerDeck": 1
+  },
+  "base": {
+    "health": 10,
+    "directionalShields": 4,
+    "shieldBreakAttackerDamage": 1,
+    "overchargeAttackerDamage": 2,
+    "cannonMaxRange": 3,
+    "cannonEnergyCycle": [
+      1,
+      3,
+      5
+    ],
+    "cannonIgnoresEvasion": true
+  },
+  "combat": {
+    "damageFormula": "max(0, firepower - evasion)",
+    "critChance": 0.2,
+    "luckCritChance": 0.35,
+    "critIgnoresEvasion": true,
+    "critDamage": "firepower",
+    "critPiercesProtect": false,
+    "missEnabled": false
+  },
+  "scoring": {
+    "multiplierQuarterPerKill": true,
+    "multiplierTimes2AtKills": 4,
+    "multiplierTimes3AtKills": 8,
+    "allyDeathDropsFullMultiplierLevel": true
+  },
+  "startingCurrency": 0
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "description": "Compiled game content from bible/. Load these in Flutter/SiegeEngine/ProgressionService.",
+  "files": [
+    "tunables.json",
+    "perks.json",
+    "units.json",
+    "star_cards.json",
+    "sieges.json"
+  ],
+  "rebuild": "python content/build_from_bible.py"
+}

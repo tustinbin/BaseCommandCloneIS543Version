@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "source": "bible/perks.md",
+  "perks": [
+    {
+      "id": "behemoth",
+      "name": "Behemoth",
+      "definition": "Enemy: +1 Attack and +1 Firepower **per turn**. Player: when engaged, +1 Attack and +1 Firepower per turn, **cap +3**.",
+      "confidence": "observed"
+    },
+    {
+      "id": "concealment",
+      "name": "Concealment",
+      "definition": "Spawn at **range 2** instead of 4.",
+      "confidence": "observed"
+    },
+    {
+      "id": "first_strike",
+      "name": "First Strike / Preemptive",
+      "definition": "Attack first when engaged; if both have it, **player** goes first.",
+      "confidence": "observed"
+    },
+    {
+      "id": "rage",
+      "name": "Rage / Fury",
+      "definition": "+1 Firepower each time hit (including map weapons).",
+      "confidence": "observed"
+    },
+    {
+      "id": "heavy_weapons",
+      "name": "Heavy Weapons",
+      "definition": "First attack in engagement **ignores** opponent evasion.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ion_weapon",
+      "name": "Ion Weapon",
+      "definition": "Enemy: +1 vs aircraft; ignore base shield (not overcharge). Player: +1 vs aircraft; ignore enemy unit shields.",
+      "confidence": "observed"
+    },
+    {
+      "id": "luck",
+      "name": "Luck / Good Luck",
+      "definition": "Higher critical-hit rate (“fatality rate is high”).",
+      "confidence": "observed"
+    },
+    {
+      "id": "overload",
+      "name": "Overload",
+      "definition": "First attack opportunity spends **all** attacks at once.",
+      "confidence": "observed"
+    },
+    {
+      "id": "protect",
+      "name": "Protect / Protected",
+      "definition": "Ignore first damaging hit; does not block instant-kill (Thermal Imploder); ≠ shield layer.",
+      "confidence": "observed"
+    },
+    {
+      "id": "recovery",
+      "name": "Recovery",
+      "definition": "Full HP at each turn start.",
+      "confidence": "observed"
+    },
+    {
+      "id": "resurrection",
+      "name": "Resurrection",
+      "definition": "After dying once and battle ends, respawn without this perk.",
+      "confidence": "observed"
+    },
+    {
+      "id": "speed_acceleration",
+      "name": "Speed Acceleration",
+      "definition": "Advance **2** spaces per turn. Default on Probe Droid & Speeder Bike.",
+      "confidence": "observed"
+    },
+    {
+      "id": "squad_leader",
+      "name": "Squad Leader",
+      "definition": "Enemy: spawn with +1 extra unit. **Player: after battle, draw a new star card.**",
+      "confidence": "observed"
+    },
+    {
+      "id": "important_goal",
+      "name": "Important Goal",
+      "definition": "Must attack the unit with this perk.",
+      "confidence": "observed"
+    }
+  ],
+  "unitShields": {
+    "blockAttacks": true,
+    "regenPerTurnEnd": 1,
+    "clearedBy": "ion_grenade"
+  },
+  "luckCritChance": 0.35
+}

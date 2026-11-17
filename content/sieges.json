@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "source": "bible/sieges.md",
+  "sectorIndex": {
+    "N": 0,
+    "E": 1,
+    "S": 2,
+    "W": 3
+  },
+  "sieges": [
+    {
+      "id": "siege_01",
+      "name": "Welcome to Base Command / The First Line",
+      "unlock": "always",
+      "difficulty": "easy_tutorial",
+      "confidence": "invented (product)",
+      "starScoreThresholds": {
+        "1": 100,
+        "2": 250,
+        "3": 500
+      },
+      "starPotsCredits": {
+        "1": 50,
+        "2": 100,
+        "3": 150
+      },
+      "unitPool": [
+        "rebel_soldier",
+        "t47_airspeeder",
+        "a_wing",
+        "x_wing"
+      ],
+      "excludeEnemyHeroes": true,
+      "excludeAtAt": true,
+      "spawnScript": [
+        {
+          "turn": 1,
+          "unitId": "stormtrooper",
+          "sector": 0,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 1,
+          "unitId": "probe_droid",
+          "sector": 2,
+          "range": 4,
+          "perks": [
+            "speed_acceleration"
+          ]
+        },
+        {
+          "turn": 2,
+          "unitId": "stormtrooper",
+          "sector": 1,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 3,
+          "unitId": "probe_droid",
+          "sector": 3,
+          "range": 4,
+          "perks": [
+            "speed_acceleration"
+          ]
+        },
+        {
+          "turn": 4,
+          "unitId": "stormtrooper",
+          "sector": 0,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 4,
+          "unitId": "stormtrooper",
+          "sector": 2,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 5,
+          "unitId": "probe_droid",
+          "sector": 1,
+          "range": 4,
+          "perks": [
+            "speed_acceleration"
+          ]
+        },
+        {
+          "turn": 6,
+          "unitId": "stormtrooper",
+          "sector": 3,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 7,
+          "unitId": "stormtrooper",
+          "sector": 1,
+          "range": 4,
+          "perks": []
+        },
+        {
+          "turn": 7,
+          "unitId": "probe_droid",
+          "sector": 0,
+          "range": 4,
+          "perks": [
+            "speed_acceleration"
+          ]
+        }
+      ],
+      "lastScriptedTurn": 8
+    }
+  ]
+}

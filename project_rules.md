@@ -10,7 +10,7 @@ Living source of truth. See [`README.md`](README.md) for the doc index.
 - **Client:** **Flutter** in [`app/`](app/) · **Backend:** Firebase Spark (Auth + Firestore) · live backend from device/simulator
 - **HW9 fallback:** Archived SwiftUI shell at [`course/archive/SwiftCode/`](course/archive/SwiftCode/) if Flutter isn’t demoable by Wed night
 - **Orientation:** Landscape for hub + siege play
-- **Art direction:** **Your** visual design in [`design/current/`](design/current/). [`design/hw8-placeholder/`](design/hw8-placeholder/) is HW8-only. Original game photos in [`research/reference_photos/`](research/reference_photos/) for board/companion feel only — career/stats screens are Battlefront companion, not our systems.
+- **Art direction:** **Your** visual design in [`design/current/`](design/current/) ([`README.md`](design/current/README.md) — shape vs image rules). Drop supplied art in [`design/current/assets/`](design/current/assets/). Chrome = shapes/text; logos, Star Cards, units, figurines, backgrounds = **you supply** (no AI image gen). Results blur = your photo + code blur. [`design/hw8-placeholder/`](design/hw8-placeholder/) is HW8-only.
 - **Hub:** After login → Siege Home; swipe left Shop; swipe right Decks
 - **Game facts authority:** [`bible/`](bible/) only. Research = provenance. Grill/ADRs: [`research/wiki/DECISIONS.md`](research/wiki/DECISIONS.md), [`docs/adr/`](docs/adr/), [`GLOSSARY.md`](GLOSSARY.md)
 - **Spec:** [`PROJECT_SPEC.md`](PROJECT_SPEC.md)

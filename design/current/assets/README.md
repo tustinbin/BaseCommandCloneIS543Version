@@ -31,6 +31,8 @@ python design/current/assets/organize_assets.py
 
 Planet BGs are shared per siege theme for **Home / briefing / battlefield**. For **briefing frosted panel + Results**, reuse the **same** image and **blur in code**.
 
+**Endor note:** `backgrounds/endor_background.png` is currently ~739×415 (soft on desktop). Replace that file in place with ~1920×1080 PNG when you have HQ art; `app/assets/art` junctions here automatically.
+
 ## Battlefield
 
 Do **not** wait on PDF frame 07. Compose the screen from stage + cannon + slots + models + HUD shapes, using `gameboard/exampleboard_gameboard.png` as the layout reference. Details: [`../README.md`](../README.md#battlefield-layout-composed--not-pdf-07).

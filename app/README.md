@@ -1,9 +1,35 @@
-# Flutter app
+# Flutter app (`base_command`)
 
-Product client for Base Command clone (Flutter). Scaffold not created yet — add the Flutter project here.
+Product client for the Base Command clone.
 
-Playtest: prefer **Mac** (iOS Simulator ± Android emulator). Windows can run Android emulator / web only.
+## Run (Windows)
 
-Seams (see [`../GLOSSARY.md`](../GLOSSARY.md), [`../docs/adr/`](../docs/adr/)): **SiegeEngine**, **ProgressionService**.
+```bash
+cd app
+flutter pub get
+flutter run -d chrome
+# or, with emulator running:
+flutter emulators --launch Medium_Phone_API_37.0
+flutter run
+```
 
-**Content:** load compiled JSON from [`../content/`](../content/) (rebuild with `python content/build_from_bible.py` after bible edits). Wire as Flutter assets when the project is scaffolded.
+Prefer landscape. Mac: `flutter run` on iOS Simulator when Flutter + Xcode are installed there.
+
+## Layout
+
+- `lib/screens/` — Access, Hub (Shop ← Home → Decks), Sieges, Briefing, Battlefield, Results, Leaderboard, Deck editor
+- `lib/assets/asset_paths.dart` — bundled asset path constants
+- Seams later: **SiegeEngine**, **ProgressionService**
+
+## Assets
+
+Local junctions (gitignored; recreate after clone):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tool/link_assets.ps1
+```
+
+- `assets/art` → `../design/current/assets`
+- `assets/content` → `../content`
+
+Rebuild content JSON: `python content/build_from_bible.py` from repo root.

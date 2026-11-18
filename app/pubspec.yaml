@@ -1,0 +1,35 @@
+name: base_command
+description: Base Command clone — IS543 Option B Flutter client.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  material_ui: ^1.11.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/content/manifest.json
+    - assets/content/tunables.json
+    - assets/content/units.json
+    - assets/content/star_cards.json
+    - assets/content/sieges.json
+    - assets/content/perks.json
+    - assets/art/manifest.json
+    - assets/art/logo/
+    - assets/art/backgrounds/
+    - assets/art/gameboard/
+    - assets/art/star_cards/
+    - assets/art/units/
+    - assets/art/perks/
